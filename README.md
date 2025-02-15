@@ -162,6 +162,10 @@ Step 5: Test the Button and Popup
 Go to a Contact record.
 You should see the Validate Phone button.
 Click the button, and the popup will appear showing the phone validation details from Abstract API.
+![image](https://github.com/user-attachments/assets/ca58845e-048e-4030-9719-fe1a7b6d77b8)
+![image](https://github.com/user-attachments/assets/fb079640-ccd8-41c1-a42b-efb036b7d2c8)
+
+
 
 References:
 https://www.youtube.com/watch?v=sE6MX8vz1Y0
