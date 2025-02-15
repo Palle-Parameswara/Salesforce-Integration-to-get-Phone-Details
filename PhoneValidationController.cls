@@ -1,6 +1,6 @@
 public class PhoneValidationController {
     
-    private static final String API_KEY = 'd90b7df724114ec59a326b81afca3e4e'; // Replace with your actual API key
+    private static final String API_KEY = 'apikey'; // Replace with your actual API key
     
     @AuraEnabled(cacheable=true)
     public static Map<String, Object> validatePhoneNumber(String contactId) {
