@@ -127,5 +127,41 @@ Save the page layout and activate it for users.
 ![image](https://github.com/user-attachments/assets/0c0aacbd-5610-441f-b018-7f37f4ffc869)
 
 
+Step 1: Create an Apex Class to Call the Integration
+We will create an Apex class that integrates with the external service (Abstract API) to validate the phone number.
+PhoneValidationController
+
+Please replace the api key
+
+
+Step 2: Create a Lightning Web Component (LWC) to Handle the Popup
+The LWC will display the popup with the phone details once the button is clicked. It will communicate with the Apex controller to fetch phone details.
+
+Create the LWC Component:
+phoneValidation.html
+phoneValidation.js
+phoneValidation.css
+phoneValidation.js-meta.xml
+
+Step 3: Create a Quick Action on the Contact Page
+Go to Setup → Object Manager → Contact.
+In the left sidebar, under Buttons, Links, and Actions, click New Action.
+Choose Action Type: Lightning Component.
+Set the following:
+Action Name: Validate_Phone
+Label: Validate Phone
+Lightning Component: Select c:phoneValidation (the component you just created).
+Save the action.
+
+Step 4: Add the Quick Action to the Contact Page Layout
+Go to Contact Page Layout.
+In the Lightning App Builder, drag and drop the Quick Action (Validate Phone) to the Contact Layout.
+Save and Activate the page layout.
+
+Step 5: Test the Button and Popup
+Go to a Contact record.
+You should see the Validate Phone button.
+Click the button, and the popup will appear showing the phone validation details from Abstract API.
+
 References:
 https://www.youtube.com/watch?v=sE6MX8vz1Y0
