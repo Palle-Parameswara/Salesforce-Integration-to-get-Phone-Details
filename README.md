@@ -1,6 +1,6 @@
 # Salesforce-Integration-to-get-Phone-Details
 
-External website used: https://phonevalidation.abstractapi.com
+External website used: https://app.abstractapi.com/api/phone-validation/tester
 
 Steps to Set Up Phone Number Validation Using Flow and External Services
 Step 1: Create a Permission Set
